@@ -25,11 +25,18 @@ function gotPoses(results)
     }
 }
 
-function takesnapshot() 
+function draw() 
+{ 
+    image(video, 0, 0, 300, 300);
+}
+
+function takesnaphot() 
 { 
     save('MyFilterImage.png');
 }
+
 function modelLoaded() 
 { 
     console.log('PoseNet IS Initialized');
 }
+
